@@ -15,6 +15,7 @@ import (
 	"crypto/hmac"
 	"crypto/md5"
 	"crypto/sha1"
+	"crypto/tls"
 	"encoding/base64"
 	"encoding/xml"
 	"fmt"
@@ -42,6 +43,7 @@ type S3 struct {
 	ConnectTimeout time.Duration
 	ReadTimeout    time.Duration
 	Signature      int
+	TLSSkipVerify  bool
 	private        byte // Reserve the right of using private data.
 }
 
@@ -1229,7 +1231,8 @@ func (s3 *S3) doHttpRequest(hreq *http.Request, resp interface{}) (*http.Respons
 				}
 				return
 			},
-			Proxy: http.ProxyFromEnvironment,
+			Proxy:           http.ProxyFromEnvironment,
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: s3.TLSSkipVerify},
 		},
 	}
 
