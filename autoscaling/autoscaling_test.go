@@ -1,8 +1,8 @@
 package autoscaling
 
 import (
-	"github.com/AdRoll/goamz/autoscaling/astest"
-	"github.com/AdRoll/goamz/aws"
+	"github.com/cardamaro/goamz/autoscaling/astest"
+	"github.com/cardamaro/goamz/aws"
 	"testing"
 )
 

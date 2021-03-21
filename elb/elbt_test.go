@@ -1,9 +1,9 @@
 package elb_test
 
 import (
-	"github.com/AdRoll/goamz/aws"
-	"github.com/AdRoll/goamz/elb"
-	"github.com/AdRoll/goamz/elb/elbtest"
+	"github.com/cardamaro/goamz/aws"
+	"github.com/cardamaro/goamz/elb"
+	"github.com/cardamaro/goamz/elb/elbtest"
 	"gopkg.in/check.v1"
 )
 

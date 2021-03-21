@@ -8,7 +8,7 @@ import (
 	"encoding/base64"
 	"encoding/xml"
 	"fmt"
-	"github.com/AdRoll/goamz/ec2"
+	"github.com/cardamaro/goamz/ec2"
 	"io"
 	"net"
 	"net/http"

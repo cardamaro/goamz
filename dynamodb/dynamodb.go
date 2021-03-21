@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/AdRoll/goamz/aws"
+	"github.com/cardamaro/goamz/aws"
 )
 
 type Server struct {

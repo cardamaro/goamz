@@ -2,7 +2,7 @@ package kinesis
 
 import (
 	"encoding/json"
-	"github.com/AdRoll/goamz/aws"
+	"github.com/cardamaro/goamz/aws"
 	"io/ioutil"
 	"log"
 	"net/http"
